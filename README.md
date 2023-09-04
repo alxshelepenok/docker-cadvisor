@@ -1,11 +1,11 @@
-# docker-grafana
+# docker-cadvisor
 
 Ready-to-run Docker image with cAdvisor.
 
 ## Quickstart
 
 ```bash
-$ docker run --name cadvisor -e waterscape/cadvisor:latest
+$ docker run --name cadvisor -e alxshelepenok/cadvisor:latest
 ```
 
 ## Building
@@ -21,7 +21,7 @@ version: "3.9"
 
 services:
  cadvisor:
-  image: waterscape/cadvisor:latest
+  image: alxshelepenok/cadvisor:latest
   volumes:
     - /:/rootfs:ro
     - /sys:/sys:ro
